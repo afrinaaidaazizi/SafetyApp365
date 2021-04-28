@@ -169,7 +169,8 @@ public class emergency extends AppCompatActivity implements GoogleApiClient.Conn
             }
             for (int i = 0; i < list.size(); i++) {
                 String num = list.get(i).toString();
-                String msg = "I AM IN EMERGENCY, PLEASE HELP!"+ "\nMy Location: " + "\nLatitude : " + location.getLatitude() + "\nLongitude : " + location.getLongitude();
+                String msg = "I AM IN EMERGENCY, PLEASE HELP!"+ "\nMy Location: " + "\nLatitude : " + location.getLatitude() + "\nLongitude : "
+                        + location.getLongitude() + "https://www.google.com/maps?q=" + location.getLatitude()  + "," + location.getLongitude();
                 SmsManager.getDefault().sendTextMessage(num, null, msg, null, null);
                 Toast.makeText(getApplicationContext(), "SMS Sent Successfully", Toast.LENGTH_SHORT).show();
             } }catch (Exception e) {
