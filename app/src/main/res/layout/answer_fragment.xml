@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="40dp"
+    android:weightSum="1"
+    tools:context=".answer_fragment">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_close_24"
+        android:tint="@android:color/white"
+        android:scaleType="centerInside"
+        android:background="@drawable/round_button_red"
+        android:layout_marginRight="100dp"
+        android:onClick="Cancel"
+        android:clickable="true"
+        android:layout_weight="0.5"
+        android:layout_marginEnd="100dp" />
+
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_call_end_24"
+        android:tint="@android:color/white"
+        android:scaleType="centerInside"
+        android:background="@drawable/round_button_answer"
+        android:onClick="Answer"
+        android:layout_weight="0.5"/>
+
+
+</LinearLayout>

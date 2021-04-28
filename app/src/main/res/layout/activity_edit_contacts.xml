@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/candy">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/slack"
+        android:layout_marginTop="50dp"
+        android:contentDescription="logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="4dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:hint="@string/name"
+        app:hintTextColor="@color/lilac"
+        app:startIconDrawable="@drawable/person"
+        app:startIconTint="@color/rose"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/rose">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_edit_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="4dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:hint="@string/contact_number"
+        app:hintTextColor="@color/black"
+        app:startIconDrawable="@drawable/_phone_android"
+        app:startIconTint="@color/rose"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/rose">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
